@@ -4,6 +4,7 @@ Sistema de Controle de Passagem realiza a consulta e marcação de voo e assento
 O programa servidor controla e mantêm os voos e assentos. 
 O programa cliente realiza consultas e marcações se comunicando com o servidor.
 Entre o cliente e o servidor existe um protocolo de comunicação.
+- Use o repositório "socket_cliente_controle_passagem" como o programa cliente.
 
 ## Consulta Voo
 

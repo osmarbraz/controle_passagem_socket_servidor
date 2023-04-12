@@ -13,8 +13,6 @@ import java.net.Socket;
  */
 public class ServidorSocket {
 
-    //Socket socketClient;
-    //ServerSocket serversocket;
     ControladorVoo controlador = new ControladorVoo();
 
     /**
@@ -41,7 +39,6 @@ public class ServidorSocket {
         } else {
             return 0;
         }
-
     }
 
     public void rodarServidor() {
@@ -78,13 +75,11 @@ public class ServidorSocket {
                     out.println(Integer.toString(codigoStatus));
                     out.flush();
                 }
-
                 //Fecha a conexão
-                socketClient.close();
-                //}
+                socketClient.close();                
             }
-        } catch (IOException e) {
-            System.out.println("Exceção:" + e);
+        } catch (IOException ioe) {
+            System.out.println("Excecao: " + ioe.getMessage());
         }
         System.out.println("Servidor finalizado!");
     }
