@@ -44,7 +44,7 @@ public class ControladorVoo {
     }
     
      /**
-     * Verifica se o Voo e o Assento existem.
+     * Marca o voo e o assento.
      * 
      * @param codigoVoo
      * @param numeroAssento
